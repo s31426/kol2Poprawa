@@ -71,7 +71,7 @@ public class DbService :IDbService
 
         if (character == null)
         {
-            throw new Exception();
+            throw new NoCharacter();
         }
 
 
