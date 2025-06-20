@@ -57,7 +57,7 @@ public class DbService :IDbService
 
             if (item == null)
             {
-                throw new NoCharacter();
+                throw new NoItem();
             }
 
             items.Add(item);
