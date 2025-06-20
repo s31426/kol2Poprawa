@@ -26,7 +26,7 @@ public class CharactersController : ControllerBase
         }
         catch (NoCharacter e)
         {
-            return BadRequest("Nie istnieje postać o takim id");
+            return BadRequest("No character found");
         }
         catch (Exception e)
         {
@@ -47,7 +47,7 @@ public class CharactersController : ControllerBase
         }
         catch (TooHeavyException e)
         {
-            return Conflict("przedmioty są zbyt ciężkie");
+            return Conflict("Too heavy");
         }
         catch (Exception e)
         {
