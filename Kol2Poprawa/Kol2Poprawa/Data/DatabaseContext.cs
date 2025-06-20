@@ -28,47 +28,23 @@ public class DatabaseContext : DbContext
     
         modelBuilder.Entity<Character>().HasData(new List<Character>()
         {
-            new Character()
-            {
-                CharacterId = 1,
-                FirstName = "1",
-                LastName = "1",
-                CurrentWeight = 2,
-                MaxWeight = 3,
-            }
-       
+            new Character() { CharacterId = 1, FirstName = "1", LastName = "1", CurrentWeight = 2, MaxWeight = 3 }
         });
     
         modelBuilder.Entity<CharacterTitle>().HasData(new List<CharacterTitle>()
         {
-            new CharacterTitle()
-            {
-                CharacterId = 1,
-                TitleId = 1,
-                AcquiredAt = new DateTime(2024, 1, 1)
-            }
-       
+            new CharacterTitle() { CharacterId = 1, TitleId = 1, AcquiredAt = new DateTime(2024, 1, 1) }
         });
     
         modelBuilder.Entity<Item>().HasData(new List<Item>()
         {
-            new Item()
-            {
-                itemId = 1,
-                Name = "1",
-                Weight = 1,
-            }
+            new Item() { itemId = 1, Name = "1", Weight = 1 }
        
         });
     
         modelBuilder.Entity<Title>().HasData(new List<Title>()
         {
-            new Title()
-            {
-                TitleId = 1,
-                Name = "3"
-            },
-      
+            new Title() { TitleId = 1, Name = "3" }
         });
     }
 }
